@@ -21,7 +21,7 @@ gulp.task('js', () => {
         }))
         .pipe(source('app.js'))
         .pipe(buffer())
-        .pipe(gulp.dest('public/'))
+        .pipe(gulp.dest('public/scripts'))
         .pipe(reload({stream:true}));
 });
 gulp.task('bs', () => {
